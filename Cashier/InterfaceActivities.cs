@@ -8,6 +8,7 @@ namespace Cashier
 {
     interface InterfaceActivities
     {
+
         bool login(String username,String password);
         void order();
         void billCal();

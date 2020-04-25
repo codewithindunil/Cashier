@@ -25,7 +25,7 @@ namespace Cashier
         {
             if (activity == "add")
             {
-                bool y=new Activities().addNewItem(txtItemCode.Text,txtName.Text,txtPrice.Text,txtSize.Text,"");
+                    bool y=new Activities().addNewItem(txtItemCode.Text,txtName.Text,txtPrice.Text,txtSize.Text,"");
                 if (y == true)
                 {
                     MessageBox.Show("item added");

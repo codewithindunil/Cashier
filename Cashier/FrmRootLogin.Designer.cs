@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRootLogin));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.lblError = new System.Windows.Forms.Label();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtUser = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.lblError = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,8 +56,17 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(369, 595);
+            this.bunifuCards1.Size = new System.Drawing.Size(369, 639);
             this.bunifuCards1.TabIndex = 4;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(58, 263);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(49, 13);
+            this.lblError.TabIndex = 4;
+            this.lblError.Text = "--------------";
             // 
             // bunifuThinButton22
             // 
@@ -149,15 +158,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(58, 263);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(49, 13);
-            this.lblError.TabIndex = 4;
-            this.lblError.Text = "--------------";
             // 
             // FrmRootLogin
             // 

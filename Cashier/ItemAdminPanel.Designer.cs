@@ -149,9 +149,9 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(307, 3);
+            this.panel1.Location = new System.Drawing.Point(306, -5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1316, 784);
+            this.panel1.Size = new System.Drawing.Size(1316, 792);
             this.panel1.TabIndex = 4;
             // 
             // ItemAdminPanel
@@ -159,10 +159,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuFlatButton3);
             this.Controls.Add(this.bunifuFlatButton2);
+            this.Controls.Add(this.panel1);
             this.Name = "ItemAdminPanel";
             this.Size = new System.Drawing.Size(1626, 790);
             this.ResumeLayout(false);
@@ -176,5 +176,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private System.Windows.Forms.Panel panel1;
+        private ItemOptions1 itemOptions11;
     }
 }

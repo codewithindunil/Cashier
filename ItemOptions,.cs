@@ -42,22 +42,36 @@ namespace Cashier
             }
             else if (activity == "update")
             {
-                bool y = new Activities().addNewItem(txtItemCode.Text, txtName.Text, txtPrice.Text, txtSize.Text, "");
-                if (y == true)
+                MySqlDataReader rd;
+
+                MySqlConnection conn;
+                string connetionString = null;
+                connetionString = "server=localhost;database=restauretdb;uid=root;pwd=;";
+                conn = new MySqlConnection(connetionString);
+                conn.Open();
+
+                try
                 {
-                    MessageBox.Show("item added");
+
+                    string itemCode = txtItemCode.Text;
+                    string Name = txtName.Text;
+                    string Size = txtSize.Text;
+                    string Price = txtPrice.Text; 
+
+
+                    string updatequery = "UPDATE itemlist_tb SET itemCode='" + itemCode + "',itemname='" + Name + "',size='" + Size + "',price='" + Price + "' WHERE itemCode='" + this.txtItemCode.Text + "'";
+                    MySqlCommand updatecmd = new MySqlCommand(updatequery, conn);
+                    updatecmd.ExecuteNonQuery();
+                    MessageBox.Show("Done , Updated");
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("something wrong");
-
-
+                    MessageBox.Show(ex.ToString());
                 }
-
-            }
-            else
-            {
-
+                finally
+                {
+                    conn.Close();
+                }
             }
 
             if (activity == "delete")
@@ -66,7 +80,7 @@ namespace Cashier
 
             MySqlConnection conn;
             string connetionString = null;
-            connetionString = "server=localhost;database=restauretdb;uid=indunil;pwd=123;";
+            connetionString = "server=localhost;database=restauretdb;uid=root;pwd=;";
             conn = new MySqlConnection(connetionString);
             conn.Open();
             try

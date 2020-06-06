@@ -45,11 +45,13 @@ namespace Cashier
         {
             activity = "add";
             itemCode=new Activities().getNextItemCode();
-            ItemOptions item = new ItemOptions(activity,itemCode);
+            ItemOptions1 item = new ItemOptions1(activity,itemCode);
             panel1.Controls.Clear();
             item.Top = 10;
             item.Left = 10;
             panel1.Controls.Add(item);
+            
+           
         }
     }
 }
